@@ -1,0 +1,12 @@
+<input radio ~~ onchange="onchange(this)" />
+
+function onChange(obj) {
+	var dbType = $jq('input:radio[name="search_db_type"]:checked').val();
+	if (dbType == ) {
+		$jq('#search_dpt').css('display', 'none');
+		$jq('#search_emp').css('display', '');
+	} else {
+		$jq('#search_dpt').css('display', '');
+		$jq('#search_emp').css('display', 'none');
+	}
+}

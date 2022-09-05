@@ -1,0 +1,14 @@
+자바스크립트에서 form 값 가져오기
+
+<html>
+  <form name = "frm" id="frm">
+  <input type="hidden" name="command"/>
+  <input type="text" name = "member"/>
+  </form>
+
+
+<javascript>
+  var f = document.frm;
+
+  var command = f.command.value;
+  var member = f.member.value;
